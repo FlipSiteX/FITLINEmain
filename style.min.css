@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'ManropeB';
+    src: url(./fonts/Manrope-Bold.ttf);
+}
+@font-face {
+    font-family: 'ManropeR';
+    src: url(./fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: 'ManropeSB';
+    src: url(./fonts/Manrope-SemiBold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right,#f9fbfc, #e6ebf0,#e6ebf0);
+}
+
+.box{
+    width: 1160px;
+}
+
+h1, h2{
+    color: #07172e;
+    font-family: 'ManropeB';
+}
+
+img{
+    filter: contrast(110%);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+
+header img:first-child{
+    cursor: pointer;
+}
+
+header nav a{
+    font-family: 'ManropeSB';
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+}
+header nav a:hover{
+    color: #3586ff;
+}
+
+header .icons{
+    display: flex;
+    align-items: center;
+}
+
+header .icons a:nth-child(2){
+    margin: 0 15px 0 15px;
+}
+
+.url-but{
+    padding: 24px 0;
+    border: 1px solid #3585fd;
+    width: 260px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: #c4cdda 3px 6px 15px 0;
+    transition: .2s;
+}
+.url-but a{
+    text-decoration: none;
+    font-family: 'ManropeSB';
+    font-size: 16px;
+    color: white;
+    background-color: #3586ff;
+    padding: 21px 72px;
+    border-radius: 9px;
+    transition: .2s;
+}
+.url-but:hover{
+    background-color: #3585fd;
+    transition: .2s;
+}
+.url-but:hover a{
+    background-color: white;
+    color: #07172e;
+    transition: .2s;
+}
+
+
+.welcome{
+    display: flex;
+    margin-top: 120px;
+}
+.welcome h1{
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+.welcome h4{
+    font-family: 'ManropeR';
+    font-size: 18px;
+    color: #3c4148;
+    margin-top: 18px;
+}
+.welcome .url-but{
+    margin-top: 50px;
+}
+
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px 0 140px 0;
+}
+.courses h2{
+    font-size: 42px;
+}
+.courses .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+    width: 100%;
+}
+.courses .cards a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'ManropeSB';
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #07172e;
+    background-color: #f6f9fd;
+    padding: 12px 0;
+    width: 30%;
+    border-radius: 10px;
+    transition: .1s;
+}
+.courses .cards a:hover{
+    box-shadow: #c4cdda 3px 6px 15px 0;
+    transition: .1s;
+}
+.courses .cards p{
+    margin-top: 5px;
+}
+.courses .url-but{
+    margin-top: 70px;
+}
+
+
+.try-free{
+    position: relative;
+}
+.try-free .text{
+    position: absolute;
+    z-index: 10;
+    margin-left: 100px;
+    margin-top: 140px;
+}
+.try-free .text h2{
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+.try-free .text h4{
+    font-family: 'ManropeR';
+    font-size: 18px;
+    color: #3c4148;
+    margin-top: 30px;
+}
+.try-free .url-but{
+    width: 268px;
+    margin-top: 50px;
+}
+.try-free .url-but a{
+    padding: 21px 34px;
+}
+.try-free img{
+    border-radius: 22px;
+}
+
+
+.online-course{
+    display: flex;
+    margin-top: 150px;
+}
+.online-course img{
+    border-radius: 16px;
+}
+.online-course .info{
+    margin-left: 40px;
+}
+.online-course .info h3{
+    font-family: 'ManropeSB';
+    font-size: 16px;
+    color: #07172e;
+}
+.online-course .info h2{
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+.online-course .info h4{
+    font-family: 'ManropeR';
+    font-size: 18px;
+    color: #3c4148;
+}
+.online-course .rect-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 40px 0;
+}
+.online-course .rect{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 46%;
+    height: 60px;
+    background: #f1f4f8;
+}
+.online-course .rect p{
+    font-family: 'ManropeSB';
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.online-course .estimate, .online-course .clock, .online-course .calendar{
+    display: flex;
+    align-items: center;
+}
+.online-course .cost{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.online-course .cost .url-but{
+    width: 248px;
+}
+
+
+.interactive{
+    margin: 80px 0 150px 0;
+}
+.interactive .buttons{
+    display: flex;
+}
+.interactive .buttons .btn:nth-child(2){
+    margin: 0 40px;
+}
+.interactive .infoblock{
+    display: flex;
+    margin-top: 42px;
+}
+.interactive .infoblock .text{
+    width: 26%;
+}
+.interactive .cards{
+    display: flex;
+    margin-left: 40px;
+}
