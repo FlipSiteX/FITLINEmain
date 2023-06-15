@@ -116,9 +116,12 @@
 
         <div class="interactive box">
             <div class="buttons">
-                <div class="btn"><p>Тренеры</p></div>
-                <div class="btn"><p>Оборудование</p></div>
-                <div class="btn"><p>Отзывы</p></div>
+                <input type="radio" name="r" id="r1" hidden checked>
+                <input type="radio" name="r" id="r2" hidden>
+                <input type="radio" name="r" id="r3" hidden>
+                <label for="r1" id="l1"><p>Тренеры</p></label>
+                <label for="r2" id="l2"><p>Оборудование</p></label>
+                <label for="r3" id="l3"><p>Отзывы</p></label>
             </div>
             <div class="infoblock">
                 <div class="text">
@@ -129,21 +132,119 @@
                 <div class="cards">
                     <div class="card">
                         <img src="./img/7.png" alt="7">
-                        <h4>Ирина Усольцева</h4>
-                        <p>Мастер спорта по гимнастике</p>
+                        <div class="name">
+                            <h4>Ирина Усольцева</h4>
+                            <p>Мастер спорта по гимнастике</p>
+                        </div>
                     </div>
                     <div class="card">
                         <img src="./img/8.png" alt="8">
-                        <h4>Елена Артемьева</h4>
-                        <p>Артистка балета</p>
+                        <div class="name">
+                            <h4>Елена Артемьева</h4>
+                            <p>Артистка балета</p>
+                        </div>
                     </div>
                     <div class="card">
                         <img src="./img/9.png" alt="9">
-                        <h4>Алена Свиридова</h4>
-                        <p>Чемпионка России по акробатике</p>
+                        <div class="name">
+                            <h4>Алена Свиридова</h4>
+                            <p>Чемпионка России по акробатике</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="about-section">
+            <div class="box">
+                <div class="info">
+                    <h2>О платформе Fitline</h2>
+                    <h4>Fitline – это платформа онлайн-тренировок от лучших тренеров России. Большой выбор программ и разный уровень сложности в каждой из них позволят вам подобрать ту физическую нагрузку, которая необходима.
+                            <br> <br> На платформе есть тренировки для разных целей: снижение веса, набор мышечной массы, восстановление, развитие гибкости, поддержка общего тонуса организма.
+                    </h4>
+                    <div class="url-but">
+                        <a href="">Узнать больше</a>
+                    </div>
+                </div>
+                <img src="./img/10.jpg" alt="10">
+            </div>
+        </div>
+
+        <div class="how-work">
+            <h2>Как это работает</h2>
+            <div class="cards box">
+                <div class="card">
+                    <h5>01</h5>
+                    <h4>Выбор программы</h4>
+                    <p>Выберите программу, которая вам нравится или заполните анкету на сайте, чтобы мы смогли  подобрать для вас наиболее подходящую тренировку.</p>
+                </div>
+                <div class="card">
+                    <h5>02</h5>
+                    <h4>Личный кабинет</h4>
+                    <p>После оплаты тренировки появятся в личном кабинете. Каждая тренировка открывается после выполнения предыдущей, чтобы распределять нагрузку.</p>
+                </div>
+                <div class="card">
+                    <h5>03</h5>
+                    <h4>Правильный темп</h4>
+                    <p>Включите видео-тренировку
+                        и занимайтесь когда и где вам удобно. В тренировку включен таймер, чтобы вы могли следить за темпом и делать паузы.</p>
+                </div>
+                <div class="card">
+                    <h5>04</h5>
+                    <h4>Поддержка тренера</h4>
+                    <p>Каждое занятие сопровождается инструкцией тренера по технике выполнения всех упражнений. Прислушивайтесь к нему, чтобы тренировка была безопасной.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="plan box">
+            <h2>Персональный план питания</h2>
+            <h4>Важно уделять внимание не только физическим упражнениям, но и <br>
+                полноценному питанию. Заполните анкету и мы пришлем вам план <br>
+                питания на месяц с учетом ваших особенностей и образа жизни.</h4>
+            <form action="">
+                <div class="nametel">
+                    <div class="name">
+                        <p>Имя</p>
+                        <input type="text">
+                    </div>
+                    <div class="tel">
+                        <p>Телефон</p>
+                        <input type="tel">
+                    </div>
+                </div>
+
+                <div class="email">
+                    <p>E-mail</p>
+                    <input type="email">
+                </div>
+
+                <p>Ваша цель</p>
+
+                <div class="radio-row">
+                    <div class="weight-down">
+                        <input type="radio" name="rad" id="rad1">
+                        <label for="rad1">Снижение веса</label>
+                    </div>
+                    <div class="weight-up">
+                        <input type="radio" name="rad" id="rad2">
+                        <label for="rad2">Набор веса</label>
+                    </div>
+                    <div class="other">
+                        <input type="radio" name="rad" id="rad3">
+                        <label for="rad3">Другая цель</label>
+                    </div>
+                </div>
+
+                <div class="check-row">
+                    <input type="checkbox" name="check" id="check1">
+                    <label for="check1">Я согласен на обработку моих персональных данных</label>
+                </div>
+                
+
+                <button>Продолжить</button>
+
+            </form>
         </div>
 
     </main>

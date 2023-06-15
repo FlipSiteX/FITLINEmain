@@ -17,11 +17,21 @@
     box-sizing: border-box;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     background: linear-gradient(to right,#f9fbfc, #e6ebf0,#e6ebf0);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box{
@@ -69,15 +79,7 @@ header .icons a:nth-child(2){
     margin: 0 15px 0 15px;
 }
 
-.url-but{
-    padding: 24px 0;
-    border: 1px solid #3585fd;
-    width: 260px;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: #c4cdda 3px 6px 15px 0;
-    transition: .2s;
-}
+
 .url-but a{
     text-decoration: none;
     font-family: 'ManropeSB';
@@ -87,12 +89,12 @@ header .icons a:nth-child(2){
     padding: 21px 72px;
     border-radius: 9px;
     transition: .2s;
+    outline: 1px solid #3585fd;
+    outline-offset: 4px;
+    box-shadow: #b5becb 3px 6px 15px 0;
 }
-.url-but:hover{
-    background-color: #3585fd;
-    transition: .2s;
-}
-.url-but:hover a{
+.url-but a:hover{
+    outline-color: white;
     background-color: white;
     color: #07172e;
     transition: .2s;
@@ -116,7 +118,7 @@ header .icons a:nth-child(2){
     margin-top: 18px;
 }
 .welcome .url-but{
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 
@@ -124,7 +126,7 @@ header .icons a:nth-child(2){
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 120px 0 140px 0;
+    margin: 120px 0 160px 0;
 }
 .courses h2{
     font-size: 42px;
@@ -158,7 +160,7 @@ header .icons a:nth-child(2){
     margin-top: 5px;
 }
 .courses .url-but{
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 
@@ -179,11 +181,11 @@ header .icons a:nth-child(2){
     font-family: 'ManropeR';
     font-size: 18px;
     color: #3c4148;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .try-free .url-but{
     width: 268px;
-    margin-top: 50px;
+    margin-top: 72px;
 }
 .try-free .url-but a{
     padding: 21px 34px;
@@ -211,16 +213,18 @@ header .icons a:nth-child(2){
 .online-course .info h2{
     font-size: 42px;
     letter-spacing: 1px;
+    line-height: 40px;
 }
 .online-course .info h4{
     font-family: 'ManropeR';
     font-size: 18px;
     color: #3c4148;
+    margin-top: 30px;
 }
 .online-course .rect-row{
     display: flex;
     justify-content: space-between;
-    margin: 50px 0 40px 0;
+    margin: 40px 0 50px 0;
 }
 .online-course .rect{
     display: flex;
@@ -252,12 +256,17 @@ header .icons a:nth-child(2){
 
 
 .interactive{
-    margin: 80px 0 150px 0;
+    margin: 80px 0 80px 0;
 }
 .interactive .buttons{
     display: flex;
 }
-.interactive .buttons .btn:nth-child(2){
+.interactive .buttons p{
+    font-family: 'ManropeSB';
+    font-size: 16px;
+    font-weight: 600;
+}
+#l2{
     margin: 0 40px;
 }
 .interactive .infoblock{
@@ -265,9 +274,240 @@ header .icons a:nth-child(2){
     margin-top: 42px;
 }
 .interactive .infoblock .text{
-    width: 26%;
+    width: 28%;
+}
+.interactive .infoblock .text p{
+    font-family: 'ManropeR';
+    font-size: 16px;
+    color: #3c4148;
+    font-weight: 600;
 }
 .interactive .cards{
     display: flex;
-    margin-left: 40px;
+    justify-content: space-between;
+    margin-left: 60px;
+    width: 100%;
+}
+.interactive .card{
+    padding: 15px 0;
+    background-color: #f1f4f8;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+.interactive .card img{
+    height: 80%;
+}
+.interactive .name{
+    text-align: center;
+}
+.interactive .name h4{
+    font-family: 'ManropeSB';
+    font-size: 16px;
+    color: #07172e;
+}
+.interactive .name p{
+    font-family: 'ManropeR';
+    font-size: 12px;
+    font-weight: 600;
+    color: #3c4148;
+}
+
+#l1, #l2, #l3{
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#r1:checked ~ #l1, #r2:checked ~ #l2, #r3:checked ~ #l3{
+    background-color: #3585fd;
+    color: white;
+    box-shadow: #c4cdda 3px 6px 15px 0;
+}
+
+
+
+.about-section{
+    display: flex;
+    justify-content: center;
+    background-color: #f1f4f8;
+    width: 100vw;
+    padding: 150px 0 140px 0;
+}
+.about-section .box{
+    display: flex;
+}
+.about-section .info{
+    flex-direction: column;
+}
+.about-section .info h2{
+    font-size: 42px;
+}
+.about-section .info h4{
+    font-family: 'ManropeR';
+    font-size: 18px;
+    color: #3c4148;
+    margin-top: 30px;
+}
+.about-section .url-but{
+    margin-top: 80px;
+}
+.about-section img{
+    border-radius: 20px;
+    margin-left: 90px;
+    margin-top: 12px;
+}
+
+
+.how-work{
+    margin: 140px 0 130px 0;
+}
+.how-work h2{
+    text-align: center;
+    font-size: 42px;
+}
+.how-work .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.how-work .cards .card{
+    width: 22%;
+}
+.how-work .card h5{
+    font-family: 'ManropeSB';
+    font-size: 14px;
+    color: white;
+    background-color: #3586ff;
+    border-radius: 10px;
+    width: 62px;
+    padding: 6px 0;
+    text-align: center;
+    font-weight: normal;
+}
+.how-work .card h4{
+    margin: 25px 0 12px 0;
+    font-family: 'ManropeSB';
+    font-size: 18px;
+    color: #07172e;
+}
+.how-work p{
+    font-family: 'ManropeR';
+    font-size: 16px;
+    font-weight: 600;
+    color: #3c4148;
+}
+
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0;
+    background: linear-gradient(to left,#f9fbfc, #e6ebf0,#e6ebf0);
+    border-radius: 14px;
+}
+.plan h2{
+    font-size: 42px;
+}
+.plan h4{
+    font-family: 'ManropeR';
+    font-size: 18px;
+    color: #3c4148;
+    margin-top: 24px;
+    text-align: center;
+}
+.plan form{
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+}
+.plan .nametel{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 60px 0 30px 0;
+}
+.plan .name, .plan .tel{
+    width: 260px;
+}
+.plan .name input, .plan .tel input, .plan .email input{
+    width: 100%;
+    height: 54px;
+    border-radius: 6px;
+    background: none;
+    border: 1px solid #d8dce0;
+    outline: none;
+    padding: 0 14px;
+    font-family: 'ManropeR';
+    font-size: 16px;
+}
+.plan .name p, .plan .tel p, .plan .email p{
+    margin-bottom: 14px;
+}
+.plan p, .plan label{
+    font-family: 'ManropeR';
+    font-size: 14px;
+    font-weight: 600;
+    color: #3c4148;
+}
+.plan p:nth-child(3){
+    margin: 34px 0 15px 0;
+}
+.plan .radio-row, .plan .check-row, .plan .weight-down, .plan .weight-up, .plan .other{
+    display: flex;
+}
+.plan .radio-row{
+    width: 376px;
+    justify-content: space-between;
+}
+.plan .radio-row input, .plan .check-row input{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.plan .check-row{
+    align-items: center;
+    margin-top: 30px;
+}
+.plan button{
+    margin-top: 70px;
+}
+.plan .radio-row label, .plan .check-row label{
+    margin-left: 6px;
+    cursor: pointer;
+}
+.plan .radio-row label{
+    color: #07172e;
+}
+.plan button{
+    align-self: center;
+    width: 260px;
+    font-family: 'ManropeSB';
+    font-size: 16px;
+    color: white;
+    background-color: #3586ff;
+    padding: 21px 72px;
+    border-radius: 9px;
+    transition: .2s;
+    outline: 1px solid #3585fd;
+    outline-offset: 4px;
+    box-shadow: #b5becb 3px 6px 15px 0;
+    border: none;
+    cursor: pointer;
+}
+.plan button:hover{
+    outline-color: white;
+    background-color: white;
+    color: #07172e;
+    transition: .2s;
 }
