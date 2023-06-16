@@ -38,6 +38,10 @@ main{
     width: 1160px;
 }
 
+h2{
+    font-size: 42px;
+}
+
 h1, h2{
     color: #07172e;
     font-family: 'ManropeB';
@@ -80,6 +84,9 @@ header .icons a:nth-child(2){
 }
 
 
+.url-but{
+    text-align: center;
+}
 .url-but a{
     text-decoration: none;
     font-family: 'ManropeSB';
@@ -128,9 +135,6 @@ header .icons a:nth-child(2){
     align-items: center;
     margin: 120px 0 160px 0;
 }
-.courses h2{
-    font-size: 42px;
-}
 .courses .cards{
     display: flex;
     justify-content: space-between;
@@ -174,7 +178,6 @@ header .icons a:nth-child(2){
     margin-top: 140px;
 }
 .try-free .text h2{
-    font-size: 42px;
     letter-spacing: 1px;
 }
 .try-free .text h4{
@@ -211,7 +214,6 @@ header .icons a:nth-child(2){
     color: #07172e;
 }
 .online-course .info h2{
-    font-size: 42px;
     letter-spacing: 1px;
     line-height: 40px;
 }
@@ -346,12 +348,6 @@ header .icons a:nth-child(2){
 .about-section .box{
     display: flex;
 }
-.about-section .info{
-    flex-direction: column;
-}
-.about-section .info h2{
-    font-size: 42px;
-}
 .about-section .info h4{
     font-family: 'ManropeR';
     font-size: 18px;
@@ -373,7 +369,6 @@ header .icons a:nth-child(2){
 }
 .how-work h2{
     text-align: center;
-    font-size: 42px;
 }
 .how-work .cards{
     display: flex;
@@ -416,20 +411,18 @@ header .icons a:nth-child(2){
     background: linear-gradient(to left,#f9fbfc, #e6ebf0,#e6ebf0);
     border-radius: 14px;
 }
-.plan h2{
-    font-size: 42px;
-}
 .plan h4{
     font-family: 'ManropeR';
     font-size: 18px;
     color: #3c4148;
     margin-top: 24px;
     text-align: center;
+    width: 50%;
 }
 .plan form{
     display: flex;
     flex-direction: column;
-    width: 560px;
+    width: 48%;
 }
 .plan .nametel{
     display: flex;
@@ -438,7 +431,7 @@ header .icons a:nth-child(2){
     margin: 60px 0 30px 0;
 }
 .plan .name, .plan .tel{
-    width: 260px;
+    width: 46%;
 }
 .plan .name input, .plan .tel input, .plan .email input{
     width: 100%;
@@ -510,4 +503,204 @@ header .icons a:nth-child(2){
     background-color: white;
     color: #07172e;
     transition: .2s;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+footer p, footer a{
+    font-family: 'ManropeR';
+    font-size: 12px;
+    font-weight: 600;
+    color: #07172e;
+}
+footer .icons{
+    display: flex;
+    align-items: center;
+}
+footer .icons .icon{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+footer .icon a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+@media (max-width:480px){
+
+    .box{
+        width: 450px;
+    }
+
+    header nav{
+        order: -1;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    .welcome h1{
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    .welcome{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .welcome .info{
+        text-align: center;
+    }
+    .welcome .url-but{
+        margin-top: 60px;
+    }
+    .welcome img{
+        margin-top: 70px;
+        width: 80%;
+    }
+
+
+    .courses{
+        margin: 40px 0 130px 0;
+    }
+    .courses .cards{
+        margin-top: 30px;
+    }
+    .courses .url-but{
+        margin-top: 68px;
+    }
+    .courses .cards a{
+        overflow: hidden;
+    }
+    .courses .cards img{
+        width: 95%;
+        height: 100%;
+    }
+
+
+    .try-free img{
+        width: 100%;
+    }
+    .try-free .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 6px 0;
+    }
+    .try-free h2{
+        position: absolute;
+        top: -64px;
+    }
+    .try-free .text h4{
+        font-size: 16px;
+        width: 45%;
+        margin-left: 30px;
+        align-self: start;
+    }
+    .try-free .url-but{
+        margin-top: 80px;
+    }
+
+
+    .online-course{
+        flex-direction: column;
+    }
+    .online-course .info{
+        margin: 18px 0 0 0;
+        padding: 0 10px;
+    }
+    .online-course .info h2{
+        line-height: 30px;
+    }
+    .online-course .rect:last-child{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .online-course .rect-row{
+        margin: 30px 0 50px 0;
+    }
+
+
+    .interactive{
+        margin: 60px 0;
+    }
+    .interactive .infoblock{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .interactive .infoblock .text{
+        width: 100%;
+    }
+    .interactive .cards{
+        margin: 20px 0 0 0;
+    }
+    .interactive .card{
+        height: 220px;
+        justify-content: start;
+    }
+    .interactive .card h4{
+        font-size: 14px;
+    }
+    .interactive .name p{
+        line-height: 14px;
+    }
+
+
+    .about-section{
+        padding: 60px 0 60px 0;
+    }
+    .about-section .box{
+        flex-direction: column;
+    }
+    .about-section img{
+        margin: 0;
+    }
+
+
+    .how-work{
+        margin: 60px 0;
+    }
+    .how-work .cards{
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .how-work .cards .card{
+        width: 100%;
+        margin: 12px 0;
+    }
+    .how-work .card h4{
+        margin: 12px 0 6px 0;
+    }
+
+
+    .plan{
+        padding: 40px 0;
+    }
+    .plan h2{
+        text-align: center;
+        line-height: 32px;
+    }
+    .plan h4{
+        width: 92%;
+        font-size: 16px;
+    }
+    .plan form{
+        width: 90%;
+    }
+    .plan .radio-row{
+        width: 100%;
+    }
+    .plan button{
+        margin-top: 40px;
+    }
 }
