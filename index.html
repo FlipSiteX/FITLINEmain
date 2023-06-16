@@ -6,18 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FITLINE</title>
     <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <header class="box">
+
         <img src="./img/logotype.svg" alt="logo">
+
         <nav>
-            <a href="">ЙОГА</a>
-            <a href="">МФР</a>
-            <a href="">РАСТЯЖКА</a>
-            <a href="">HIIT</a>
-            <a href="">ГАЙДЫ</a>
+            <input type="radio" name="burger" id="hidburg" hidden>
+            <input type="radio" name="burger" id="burg" hidden>
+            
+            <label for="burg">
+                    
+                <div class="burger-but">
+                    <i class="fa-solid fa-burger"></i>
+                </div>
+                
+                <div class="url-menu">
+                    <div class="url"><a href="">ЙОГА</a></div>
+                    <div class="url"><a href="">МФР</a></div>
+                    <div class="url"><a href="">РАСТЯЖКА</a></div>
+                    <div class="url"><a href="">HIIT</a></div>
+                    <div class="url"><a href="">ГАЙДЫ</a></div>
+                </div>
+
+
+            </label>
+
+            <label for="hidburg" id="lhid"></label>
+                
         </nav>
+        
         <div class="icons">
             <a href=""><img src="./img/search.png" alt="search"></a>
             <a href=""><img src="./img/cart.png" alt="cart"></a>

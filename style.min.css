@@ -84,6 +84,28 @@ header .icons a:nth-child(2){
 }
 
 
+.burger-but{
+    display: none;
+    cursor: pointer;
+    z-index: 6;
+}
+.burger-but i{
+    font-size: 36px;
+    color: #07172e;
+}
+#lhid{
+    display: none;
+    width: 100vw;
+    height: 150vh;
+    position: absolute;
+    cursor: pointer;
+    top: -20px;
+}
+
+
+.url-menu{
+    position: absolute;
+}
 .url-but{
     text-align: center;
 }
@@ -540,9 +562,43 @@ footer .icon a{
         width: 450px;
     }
 
+    header{
+        position: relative;
+    }
+
     header nav{
         order: -1;
+        display: flex;
+        flex-direction: column;
     }
+    header nav a{
+        margin: 0;
+    }
+
+    .burger-but{
+        display: block;
+    }
+
+    header label{
+        display: flex;
+        flex-direction: column;
+    }
+    header .url{
+        display: none;
+    }
+    #burg:checked ~ label .url-menu .url{
+        display: block;
+        bottom: -30px;
+        z-index: 6;
+    }
+    #burg:checked ~ #lhid{
+        display: block;
+        z-index: 5;
+    }
+    #hidburg:checked ~ #lhid, #hidburg:checked ~ label .url{
+        display: none;
+    }
+
 
     h2{
         font-size: 32px;
