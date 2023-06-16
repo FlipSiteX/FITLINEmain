@@ -67,7 +67,7 @@ header nav a{
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    color: black;
+    color: #07172e;
     margin: 30px;
 }
 header nav a:hover{
@@ -96,15 +96,16 @@ header .icons a:nth-child(2){
 #lhid{
     display: none;
     width: 100vw;
-    height: 150vh;
+    height: 57in;
     position: absolute;
     cursor: pointer;
-    top: -20px;
+    top: -30px;
+    left: -10px;
+    background-color: #3c414841;
 }
 
-
 .url-menu{
-    position: absolute;
+    display: flex;
 }
 .url-but{
     text-align: center;
@@ -577,25 +578,34 @@ footer .icon a{
 
     .burger-but{
         display: block;
+        z-index: 5;
     }
 
     header label{
         display: flex;
         flex-direction: column;
     }
-    header .url{
+    header .url-menu a{
         display: none;
     }
-    #burg:checked ~ label .url-menu .url{
-        display: block;
+    .url-menu{
+        width: 100%;
+        justify-content: space-between;
+        position: absolute;
         bottom: -30px;
+        z-index: 6;
+        background: white;
+        padding: 0 5px;
+    }
+    #burg:checked ~ label .url-menu a{
+        display: block;
         z-index: 6;
     }
     #burg:checked ~ #lhid{
         display: block;
         z-index: 5;
     }
-    #hidburg:checked ~ #lhid, #hidburg:checked ~ label .url{
+    #hidburg:checked ~ #lhid, #hidburg:checked ~ label a{
         display: none;
     }
 
@@ -713,13 +723,16 @@ footer .icon a{
 
 
     .about-section{
-        padding: 60px 0 60px 0;
+        padding: 60px 0 160px 0;
     }
     .about-section .box{
         flex-direction: column;
     }
+    .about-section .url-but{
+        margin-top: 390px;
+    }
     .about-section img{
-        margin: 0;
+        margin: -392px 0 0 0;
     }
 
 
