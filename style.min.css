@@ -96,11 +96,11 @@ header .icons a:nth-child(2){
 #lhid{
     display: none;
     width: 100vw;
-    height: 57in;
+    height: 57.4in;
     position: absolute;
     cursor: pointer;
     top: -30px;
-    left: -10px;
+    left: -20px;
     background-color: #3c414841;
 }
 
@@ -116,7 +116,7 @@ header .icons a:nth-child(2){
     font-size: 16px;
     color: white;
     background-color: #3586ff;
-    padding: 21px 72px;
+    padding: 21px 70px;
     border-radius: 9px;
     transition: .2s;
     outline: 1px solid #3585fd;
@@ -210,7 +210,6 @@ header .icons a:nth-child(2){
     margin-top: 20px;
 }
 .try-free .url-but{
-    width: 268px;
     margin-top: 72px;
 }
 .try-free .url-but a{
@@ -274,9 +273,6 @@ header .icons a:nth-child(2){
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.online-course .cost .url-but{
-    width: 248px;
 }
 
 
@@ -557,6 +553,8 @@ footer .icon a{
 }
 
 
+
+
 @media (max-width:480px){
 
     .box{
@@ -771,5 +769,75 @@ footer .icon a{
     }
     .plan button{
         margin-top: 40px;
+    }
+}
+
+@media (max-width:420px){
+
+    .box{
+        width: 390px;
+    }
+
+    #lhid{
+        height: 57.7in;
+    }
+
+    .try-free .text{
+        margin: 18px 0 12px 0;
+    }
+    .try-free img{
+        height: 220px;
+    }
+    .try-free h2{
+        font-size: 30px;
+        top: -80px;
+    }
+    .try-free .text h4{
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    .try-free .url-but{
+        margin-top: 110px;
+    }
+
+
+
+    .online-course .cost .url-but a{
+        padding: 21px 52px;
+    }
+    .online-course img{
+        height: 290px;
+    }
+    .interactive .buttons{
+        justify-content: space-between;
+    }
+    .interactive .buttons p{
+        font-size: 14px;
+    }
+    #l1, #l2, #l3{
+        width: 30%;
+    }
+    #l2{
+        margin: 0;
+    }
+    .interactive .card{
+        height: 180px;
+    }
+    .interactive .card img {
+        height: 70%;
+    }
+    .interactive .card h4{
+        font-size: 12px;
+    }
+    .interactive .name p{
+        margin-top: 4px;
+    }
+
+    .about-section .url-but{
+        margin-top: 340px;
+    }
+    .about-section img {
+    margin: -346px 0 0 0;
     }
 }
