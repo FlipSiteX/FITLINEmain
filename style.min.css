@@ -84,9 +84,6 @@ header .icons a:nth-child(2){
 }
 
 
-nav{
-    overflow-x: hidden;
-}
 .burger-but{
     display: none;
     cursor: pointer;
@@ -98,7 +95,7 @@ nav{
 }
 #lhid{
     display: none;
-    width: 110vw;
+    width: 101.4vw;
     height: 57.4in;
     position: absolute;
     cursor: pointer;
